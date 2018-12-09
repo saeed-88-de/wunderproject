@@ -30,6 +30,8 @@ class Install_model extends CI_Model
                   account_owner VARCHAR(100)        ,
                   iban          VARCHAR(30)         ,
 
+                  payment_data_id VARCHAR(300)      ,
+
 
                   active        ENUM('0', '1')      NOT NULL    DAFAULT '0',
                   KEY (first_name, last_name)
