@@ -16,7 +16,7 @@ class Install_model extends CI_Model
         $query = "CREATE TABLE IF NOT EXISTS users
                   (
                   id            INT(11) UNSIGNED    NOT NULL    AUTO_INCREMENT  PRIMARY KEY,
-                  email_address VARCHAR(200)        NOT NULL,    UNIQUE,
+                  email_address VARCHAR(200)        NOT NULL    UNIQUE,
                   first_name    VARCHAR(50)         NOT NULL,
                   last_name     VARCHAR(50)         NOT NULL,
                   telephone     VARCHAR(22)         NOT NULL,
@@ -33,10 +33,10 @@ class Install_model extends CI_Model
                   payment_data_id VARCHAR(300)      ,
 
 
-                  active        ENUM('0', '1')      NOT NULL    DAFAULT '0',
-                  KEY (first_name, last_name)
+                  active        ENUM('0', '1')      NOT NULL    DEFAULT '0',
+                  INDEX (first_name, last_name)
                   )
-                  ENGINE = InnoDB   DEFAULT CHARSET = utf8  COLLATE = utf8_general_ci";
+                  ENGINE = InnoDB   CHARSET=utf8  COLLATE utf8_general_ci";
         $this->db->query($query);
     }
 }
