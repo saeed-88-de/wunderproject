@@ -1,0 +1,96 @@
+body
+{
+    background: #b6b6b6;
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+h1, h2, h3, h4, h5
+{
+    margin-top: 0;
+    font-family: arial black, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=tel]
+{
+    display: block;
+    margin: 0 0 1em 0;
+    width: 380px;
+    border: 5px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 1em;
+}
+
+input[type=submit], form a
+{
+    border: none;
+    margin-right: 1em;
+    padding: 6px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    background: #348075;
+    color: white;
+    box-shadow: 0 5px 0 white;
+    -moz-box-shadow: 0 5px 0 white;
+    -webkit-box-shadow: 0 5px 0 white;
+}
+
+input[type=submit]:hover, form a:hover
+{
+    background: #287368;
+    cursor: pointer;
+}
+
+.error
+{
+    color: #393939;
+    font-size: 16px;
+}
+
+fieldset
+{
+    width: 400px;
+    margin: auto;
+    margin-bottom: 2em;
+    display: block;
+}
+
+#login_form
+{
+    width: 400px;
+    background: #f0f0f0;
+    border: 4px solid white;
+    margin: 100px auto 0;
+    padding: 1em;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+#signup_errors
+{
+    display: none;
+    color: white;
+    font-size: small;
+    text-shadow: 3px 3px 4px black;
+}
+
+#login_errors
+{
+    color: red;
+    font-size: small;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.footer
+{
+    text-align: center;
+}
