@@ -10,7 +10,7 @@ class User_account extends CI_Controller
         if($this->authenticate->is_logged_in() === true)
         {
             redirect('home');
-            die;
+            die();
         }
     }
 
