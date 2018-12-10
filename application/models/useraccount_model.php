@@ -5,6 +5,7 @@ class Useraccount_model extends CI_Model
     function __construct()
     {
         parent::__construct();
+        $this->load->database();
     }
 
     public function add_new_user($user_inputs)
