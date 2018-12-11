@@ -35,7 +35,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';// Saeed says: we use mod_rewrite to remove the page so we set this variable so that it is blank.
 
 /*
 |--------------------------------------------------------------------------

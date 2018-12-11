@@ -12,5 +12,9 @@ else if($errors == 'login_error')
 {
     echo 'You have entered an invalid email address and/or password!';
 }
+else
+{
+    echo $errors;
+}
 
 ?>

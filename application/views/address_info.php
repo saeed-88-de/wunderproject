@@ -1,4 +1,4 @@
-<h1>Enter Adrress Information</h1>
+<h1>Enter Address Information</h1>
 
 <fieldset id="signup_errors"></fieldset>
 
@@ -20,9 +20,9 @@
     $('#submit_btn').click(function(){
         var form_data = {
             street: $('#street').val(),
-            house_number: $('house_number').val(),
-            zip_code: $('zip_code').val(),
-            city: $('city').val()
+            house_number: $('#house_number').val(),
+            zip_code: $('#zip_code').val(),
+            city: $('#city').val()
         };
 
         $.ajax({
@@ -36,7 +36,7 @@
                 }
                 else
                 {
-                    window.locatin = "<?=site_url(user_account/payment_info)?>";
+                    window.location = "<?=site_url('user_account/payment_info')?>";
                 }
             }
         });

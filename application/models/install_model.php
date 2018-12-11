@@ -34,7 +34,9 @@ class Install_model extends CI_Model
 
 
                   active        ENUM('0', '1')      NOT NULL    DEFAULT '0',
-                  INDEX (first_name, last_name)
+                  reg_token     VARCHAR(40),
+                  INDEX (first_name, last_name),
+                  INDEX(reg_token)
                   )
                   ENGINE = InnoDB   CHARSET=utf8  COLLATE utf8_general_ci";
         $this->db->query($query);
